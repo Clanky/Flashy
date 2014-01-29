@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/radial_background"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dip"
+        android:gravity="center"
+        android:padding="15dip"
+        android:text="Developed by Max Krause\n15 years old student from Germany\nThanks for downloading my app."
+        android:textColor="#ffffff"
+        android:textSize="13dip" />
+
+    <ImageButton
+        android:id="@+id/btnSwitch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/btnSwitch"
+        android:background="@null"
+        android:contentDescription="@null"
+        android:src="@drawable/btn_switch_on" />
+
+    <ImageButton
+        android:id="@+id/btnSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="84dp"
+        android:background="@null"
+        android:contentDescription="@null"
+        android:src="@drawable/btn_switch_on" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/btnSwitch"
+        android:layout_marginLeft="30dp"
+        android:text="LED Flashlight"
+        android:textColorHint="#ffffff" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/btnSwitch1"
+        android:layout_marginRight="25dp"
+        android:text="Onscreen Light"
+        android:textColorHint="#ffffff" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/white"
+        android:visibility="invisible" />
+
+</RelativeLayout>
